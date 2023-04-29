@@ -49,7 +49,7 @@ export default function MockDeploymentBanner() {
                         </UnorderedList>
                         <br />
                         <Text fontSize="small" color="gray.500" fontWeight="500">
-                            To use Diode 🔌 in production mode, set environment variable:
+                            To use API Proxy Server 🔌 in production mode, set environment variable:
                             <br />
                             <Code>NEXT_PUBLIC_MOCK_DEPLOYMENT=&quot;false&quot;</Code>
                         </Text>

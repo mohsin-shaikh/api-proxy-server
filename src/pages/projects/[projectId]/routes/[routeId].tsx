@@ -267,7 +267,7 @@ export default function ApiRoutePage({ apiRoute }: Props) {
   return (
     <ProjectSecrets.Provider value={apiRoute.project.Secret}>
       <Head>
-        <title>{apiRoute.name} | Diode 🔌</title>
+        <title>{apiRoute.name} | API Proxy Server 🔌</title>
       </Head>
       <BackLink>Project details</BackLink>
       <Flex justifyContent="space-between">
@@ -280,7 +280,7 @@ export default function ApiRoutePage({ apiRoute }: Props) {
       {/* Proxy endpoint section */}
       <Box mt="20">
         <SectionHeading heading="🪄 Proxy endpoint">
-          Diode will forward all the requests made to the below URL to the origin endpoint.
+          API Proxy Server will forward all the requests made to the below URL to the origin endpoint.
           <br />
           <strong>No API keys are required</strong> and the request and response <strong>structure is same</strong> as that of the origin endpoint.
         </SectionHeading>

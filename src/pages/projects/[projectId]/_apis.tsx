@@ -27,7 +27,7 @@ import {
   MenuList,
   MenuItem,
 } from '@chakra-ui/react';
-import { DuplicateIcon, TrashIcon, DotsVerticalIcon, PlusIcon } from '@heroicons/react/24/outline';
+import { DocumentDuplicateIcon, TrashIcon, EllipsisVerticalIcon, PlusIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
@@ -165,7 +165,7 @@ export default function Apis({ project, ...props }: Props) {
       <Box {...props}>
         <Flex justifyContent="space-between">
           <SectionHeading heading="🔌 API routes">
-            API endpoints that are configured with Diode.
+            API endpoints that are configured with API Proxy Server.
           </SectionHeading>
           <Button onClick={() => setShowCreationModal(true)} colorScheme="green" bg="green.400" rightIcon={<PlusIcon width={16} />}>
             New API route
@@ -194,7 +194,7 @@ export default function Apis({ project, ...props }: Props) {
                     <MenuButton
                       as={IconButton}
                       aria-label={`${api.name} options`}
-                      icon={<DotsVerticalIcon width={16} />}
+                      icon={<EllipsisVerticalIcon width={16} />}
                       variant="ghost"
                       size="sm"
                       ml="auto"
@@ -202,7 +202,7 @@ export default function Apis({ project, ...props }: Props) {
                       onClick={e => e.stopPropagation()}
                     />
                     <MenuList minWidth="auto" fontSize="sm">
-                      <MenuItem icon={<DuplicateIcon width={16} />} onClick={(e) => openDuplicateApiModal(e, api)}>
+                      <MenuItem icon={<DocumentDuplicateIcon width={16} />} onClick={(e) => openDuplicateApiModal(e, api)}>
                         Duplicate
                       </MenuItem>
                       <MenuItem icon={<TrashIcon width={16} />} color="red.500" onClick={(e) => deleteApi(e, api.id, api.name)}>

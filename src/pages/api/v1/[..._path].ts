@@ -33,7 +33,7 @@ function runMiddleware(req: NextApiRequest, res: NextApiResponse, fn: Function):
 
 /**
  * 
- * API format: diode.com/api/v1/[:api-id]/[:path]?query=
+ * API format: api-proxy-server.com/api/v1/[:api-id]/[:path]?query=
  * 
  * @param req 
  * @param res 
